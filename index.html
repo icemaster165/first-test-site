@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceMaster</title>
+    <link rel="icon" href="images/pfp.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Heading & Navigation Bar -->
+    <header class="header">
+      <nav class="header-nav">
+        <div class="header-logo">
+          <a href="index.html"><img src="images/ai pfp.png" alt="" /></a>
+        </div>
+        <div class="header-links">
+          <a href="index.html">Home</a>
+          <a href="valorant.html">Valorant</a>
+          <a href="minecraft.html">Minecraft</a>
+          <a href="cs2.html">Counter-Strike 2</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-wrapper">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>
+              The future of gaming depends on you, do you have what it takes to
+              <span class="heading-1-word-1">play</span>,
+              <span class="heading-1-word-2">create</span>, and
+              <span class="heading-1-word-3">conquer</span>?
+            </h1>
+          </div>
+          <div class="hero-image">
+            <img src="images/ai gaming setup 4 (ai no bg).png" alt="" />
+          </div>
+        </div>
+        <div class="hero-paragraph">
+          <div class="hero-paragraph">
+            <p>
+              Step into the world of high-stakes competition and limitless
+              creativity. Whether you're planning strategic plays in Valorant,
+              building your legacy in the blocky worlds of Minecraft, or
+              battling it out in the fast-paced arenas of Counter-Strike 2, each
+              game offers a unique challenge. The digital realm is waiting for
+              players who dare to push the limits of their skill and
+              imagination. Are you ready to join a community of gamers who play,
+              create, and conquer the future?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="feature">
+      <div class="feature__container">
+        <h2 class="feature__title">what games do i play?</h2>
+        <div class="feature__image-one">
+          <a href="valorant.html">
+            <img src="images/reyna.png" alt="Valorant Reyna Wallpaper"
+          /></a>
+          <h3 class="feature__text-one">
+            <span class="feature__text-name-one">Valorant</span> - A tactical
+            FPS where teams of agents use unique abilities and precise shooting
+            to complete objectives like planting or defusing bombs.
+          </h3>
+        </div>
+        <div class="feature__image-two">
+          <a href="minecraft.html">
+            <img src="images/minecraft.png" alt="Minecraft Wallpaper"
+          /></a>
+          <h3 class="feature__text-two">
+            <span class="feature__text-name-two">Minecraft</span> - A sandbox
+            game where players explore, build, and survive in a blocky,
+            procedurally generated world.
+          </h3>
+        </div>
+        <div class="feature__image-three">
+          <a href="cs2.html">
+            <img src="images/cs2.png" alt="Counter-Strike 2 Wallpaper"
+          /></a>
+          <h3 class="feature__text-three">
+            <span class="feature__text-name-three">Counter-Strike 2</span> - A
+            competitive FPS where teams of terrorists and counter-terrorists
+            battle to plant bombs or rescue hostages in round-based gameplay.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game with gifs -->
+    <section class="game">
+      <div class="game__container">
+        <div class="game__item1">
+          <img src="images/val - team-based.gif" alt="" />
+          <h3 class="game__text1">Team-Based</h3>
+        </div>
+        <div class="game__item2">
+          <img src="images/val - precise gunplay.gif" alt="" />
+          <h3 class="game__text2">Precise Gunplay</h3>
+        </div>
+        <div class="game__item3">
+          <img src="images/minecraft goat.gif" alt="" />
+          <h3 class="game__text3">Open-World</h3>
+        </div>
+        <div class="game__item4">
+          <img src="images/minecraft - steve & alex night.gif" alt="" />
+          <h3 class="game__text4">Survival</h3>
+        </div>
+        <div class="game__item5">
+          <img src="images/cs2 - explosion.gif" alt="" />
+          <h3 class="game__text5">Tactical</h3>
+        </div>
+        <div class="game__item6">
+          <img src="images/cs2 - highly-competitive.gif" alt="" />
+          <h3 class="game__text6">Highly Competitive</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- custom dropdown menu -->
+    <div class="dropdown__title">Pro settings</div>
+    <div class="dropdown__container">
+      <div class="dropdown">
+        <input
+          type="text"
+          class="textBox"
+          placeholder="Choose a Game"
+          readonly
+        />
+        <img
+          class="dropdown-arrow"
+          src="images/arrow-down-sign-to-navigate.png"
+          alt=""
+        />
+        <div class="option">
+          <div onclick="show('Valorant')">
+            <img
+              class="val__icon"
+              src="images/valorant-logo-play-2-svgrepo-com.png"
+              alt=""
+            />
+            Valorant
+          </div>
+          <div onclick="show('Minecraft')">
+            <img
+              class="mc__icon"
+              src="images/minecraft-1-logo-png-transparent.png"
+              alt=""
+            />
+            Minecraft
+          </div>
+          <div onclick="show('Counter-Strike 2')">
+            <img
+              class="cs2__icon"
+              src="images/counter-strike-2-seeklogo.png"
+              alt=""
+            />
+            Counter-Strike 2
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function show(anything) {
+        document.querySelector(".textBox").value = anything;
+      }
+
+      let dropdown = document.querySelector(".dropdown");
+      dropdown.onclick = function () {
+        dropdown.classList.toggle("active");
+      };
+    </script>
+
+    <!-- PRO SETTINGS SECTION  -->
+    <section class="section-container">
+      <div class="card-container">
+        <h3 class="card-title">Valorant</h3>
+        <div class="card-content">
+          <div class="card-item-1">
+            <h4 class="card-item-1-title">
+              Sens
+              <hr />
+            </h4>
+            <ul class="card-item-1-desc">
+              <li>General &#8739; 0.18</li>
+              <li>Scoped Rifle &#8739; 0.9</li>
+              <li>Scoped Sniper &#8739; 1</li>
+            </ul>
+          </div>
+          <div class="card-item-2">
+            <h4 class="card-item-2-title">
+              Crosshair
+              <hr />
+            </h4>
+            <ul class="card-item-2-desc">
+              <li>
+                TenZ <br />
+                0;s;1;P;c;5;h;0;m;1;0l;4;0o<br />;2;0a;1;0f;0;1b;0;S;c;4;o;1
+              </li>
+              <li>
+                ScreaM <br />
+                0;P;c;5;o;0.286;d;1;f;0;0t;0;<br />0l;0;0o;0;0a;1;0f;0;1b;0
+              </li>
+              <li>
+                yay <br />
+                0;P;h;0;f;0;0l;4;0o;0;0a;1;0f;<br />0;1b;0
+              </li>
+            </ul>
+          </div>
+          <div class="card-item-3">
+            <h4 class="card-item-3-title">
+              Keybinds
+              <hr />
+            </h4>
+            <ul class="card-item-3-desc">
+              <li>Ability 1 &#8739; T</li>
+              <li>Ability 2 &#8739; E</li>
+              <li>Ability 3 &#8739; C</li>
+              <li>Ultimate Ability &#8739; N</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE LATEST SECTION -->
+
+    <section class="latest">
+      <div class="latest-title">
+        <h2>The Latest</h2>
+        <p>GO TO NEWS PAGE <span class="latest-title-arrow">&#10132;</span></p>
+      </div>
+      <div class="latest-container">
+        <div class="latest-content-1">
+          <div class="content-image-1-container">
+            <a href="#"
+              ><img class="content-image-1" src="images/val img 1.webp""></a
+            >
+          </div>
+          <p class="content-1-paragraph-1"><span>ESPORTS</span> | 12/8/2025</p>
+          <h3>Spotlight Series Americas</h3>
+          <p class="content-1-paragraph-2">
+            We've got more VALORANT before 2025 wraps up!
+          </p>
+        </div>
+        <div class="latest-content-2">
+          <div class="content-image-2-container">
+            <a href="#"
+              ><img class="content-image-2" src="images/val img 2.avif""></a
+            >
+          </div>
+          <p class="content-2-paragraph-1"><span>ESPORTS</span> | 12/8/2025</p>
+          <h3>TOP ACES of The Last 5 Years</h3>
+          <p class="content-2-paragraph-2">
+            Reminisce on some of the most<br />
+            memorable ACES of the last 5 years of VCT!
+          </p>
+        </div>
+        <div class="latest-content-3">
+          <div class="content-image-3-container">
+            <a href="#"
+              ><img class="content-image-3" src="images/val img 3.avif""></a
+            >
+          </div>
+          <p class="content-3-paragraph-1"><span>ESPORTS</span> | 12/7/2025</p>
+          <h3>VCT Americas 2025 Season Awards</h3>
+          <p class="content-3-paragraph-2">
+            Celebrate the winners of the VCT Americas Season Awards
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT VALORANT -->
+
+    <section class="about-val">
+      <div class="about-val-container">
+        <div class="about-val-title">
+          <h2>Reasons To Try Valorant?</h2>
+        </div>
+        <div class="about-val-one">
+          <h3>Use Your Bank Card</h3>
+          <p>
+            Spend all your hard earned money on amazing skins from ritogames.
+          </p>
+          <div class="about-val-image-one">
+            <img src="images/chamber card.png" alt="" />
+          </div>
+        </div>
+        <div class="about-val-two">
+          <h3>Blow Up Your Enemies</h3>
+          <p>Live out your wildest dreams of becoming a terrorist.</p>
+          <div class="about-val-image-two">
+            <img src="images/raze excited.png" alt="" />
+          </div>
+        </div>
+        <div class="about-val-three">
+          <h3>?</h3>
+          <p>
+            Bottomfrag and type ? to the enemies while winning to further ruin
+            their mental.
+          </p>
+          <div class="about-val-image-three">
+            <img src="images/reyna question mark.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <img src="images/ai pfp.png" alt="" />
+          <p>
+            IceMaster Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Alias, et! Harum numquam optio reprehenderit exercitationem.
+          </p>
+        </div>
+        <div class="footer-faq">
+          <h3>FAQ</h3>
+          <a href="#">Who is IceMaster?</a>
+          <a href="#">What benefits do we offer?</a>
+          <a href="#">How long does it take for you to read this?</a>
+          <a href="#">Are there any hidden fees?</a>
+          <a href="#">Are you still reading this lol?</a>
+        </div>
+        <div class="footer-discover">
+          <h3>Discover</h3>
+          <a href="#">Valorant Lineups</a>
+          <a href="#">Valorant Cheats</a>
+          <a href="#">Valorant NSFW</a>
+          <a href="#">Counter-Strike 2 Lineups</a>
+          <a href="#">Counter-Strike 2 Cheats</a>
+          <a href="#">Counter-Strike 2 Chicken NSFW</a>
+          <a href="#">Minecraft NSFW (feat. Steve & Alex)</a>
+          <a href="#">Minecraft Cheats</a>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li>Email: real@example.com</li>
+            <li>Phone: +1 (868) 123-1234</li>
+            <li>Location: Trinidad and Toabgo</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
